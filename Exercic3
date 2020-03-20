@@ -1,4 +1,4 @@
-<? php
+ <? php
 classe Produto {
   public $ nome;
   public preco;
