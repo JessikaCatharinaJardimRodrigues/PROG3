@@ -1,0 +1,68 @@
+<? php
+classe Empregados {
+  public $ pnome;
+  public $ sobrenome;
+  público $ salamen;
+  public $ salanua;
+
+
+  função pública __construct () {
+    $ this-> pnome = "jessika c";
+    $ this-> sobrenome = "jardim r";
+    $ this-> salamen = 1000,00;
+  }
+  função pública setPnome ($ recebe) {
+    return $ this-> pnome = $ recebe;
+  }
+  função pública getPnome () {
+    retornar $ this -> pnome;
+  }
+  função pública setSobrenome ($ recebe1) {
+    return $ this-> sobrenome = $ recebe1;
+  }
+  função pública getSobrenome () {
+    retornar $ this -> snome;
+  }
+  função pública setSalamen ($ recebe2) {
+    return $ this-> salamen = $ recebe2;
+  }
+  função pública getSalamen () {
+    retornar $ this -> salamen;
+  }
+  função pública setSalanua () {
+    
+    retornar $ this-> salanua = $ this-> salamen * 12;
+  }
+  função pública getSalanua () {
+    retornar $ this -> salanua;
+  }
+  função pública validaSalamen () {
+    if ($ this-> salamen <0) {
+      $ this-> salamen = 0,0;
+    }
+  }
+  public function aumentasalamen () {
+    $ porc = ($ this-> salamen * 10) / 100;
+    $ this-> salmen = $ this-> salamen + $ porc;
+  }
+}
+// empregado 1
+$ emp1 = novos Empregados ();
+$ emp1-> validaSalamen ();
+$ emp1-> setSalanua ();
+echo "O calendário anual de {$ emp1-> getPnome ()} {$ emp1-> getSobrenome ()} é R $ {$ emp1-> getSalanua ()} \ n"; 
+$ emp1 -> aumentasalamen ();
+$ emp1-> setSalanua ();
+echo "O salário anual de {$ emp1-> getPnome ()} recebe 10% e agora é de R $ {$ emp1-> getSalanua ()} \ n";
+// empregado 2
+$ emp2 = novos Empregados ();
+$ emp2 -> setPnome ("fulano");
+$ emp2 -> setSobrenome ("de siclano");
+$ emp2-> setSalamen (500);
+$ emp2-> validaSalamen ();
+$ emp2-> setSalanua ();
+echo "O calendário anual de {$ emp2-> getPnome ()} {$ emp2-> getSobrenome ()} é R $ {$ emp2-> getSalanua ()} \ n"; 
+$ emp2 -> aumentasalamen ();
+$ emp2-> setSalanua ();
+echo "O salário anual de {$ emp2-> getPnome ()} recebe 10% e agora é de R $ {$ emp2-> getSalanua ()} \ n";
+?>
